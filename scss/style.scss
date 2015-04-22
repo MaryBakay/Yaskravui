@@ -1,0 +1,207 @@
+@import "_reset.scss";
+@import "_mixins.scss";
+@import "_fonts.scss";
+
+/*----------------------------------------------------*/
+header{
+	position:absolute;
+	height:55px;
+	background:#ff7900;
+	width:100%;
+	z-index:2;
+	#logo{
+		position:absolute;
+
+		/*для лого на русском*/
+
+		//background:#fff;
+		//padding:16px 22px;
+		//@include box-shadow(0, 1px, 4px, rgba(0,0,0, 0.8));
+	}
+	.intergal-bud{
+		position:absolute;
+		top:55px;
+		right:0;
+	}
+	.main-menu{
+		display:table;
+		height:55px;
+		width:900px;
+		margin-left:200px;
+		>ul{
+			display:table-row;
+			>li{
+				display:table-cell;
+				text-align:center;
+				position:relative;
+				vertical-align:middle;
+				&:hover{
+					background:#83114c;
+					.sub-menu{
+						display:block;
+					}
+				}
+
+				.sub-menu{
+					display:none;
+					position:absolute;
+					top:55px;
+					z-index:2;
+					width:200px;
+					background:#83114c;
+					list-style:none;
+					li{
+						border-top:1px solid #a85982;
+						text-align:left;
+						a{
+							color:#fff;
+							display:block;
+							padding:8px 5px 8px 14px;
+							text-decoration:none;
+							&:hover{
+								background:#6c0239;
+							}
+						}
+					}
+				}
+				>a{
+					color:#fff;
+					text-decoration:none;
+					text-transform:uppercase;
+					font-size:21px;
+					display:block;
+					padding:14px 0;
+				}
+			}
+		}
+	}
+
+}
+.overflow{
+	overflow:hidden;
+}
+.background, .overflow{
+	height:100%;
+	width:100%;
+	min-height:600px;
+	min-width:1080px;
+	position:absolute;
+	top:0;
+	left:0;
+	.fon{
+		height:100%;
+		width:100%;
+		position:absolute;
+		top:0;
+		left:0;
+
+	}
+}
+.kvartiry{
+	position:absolute;
+	height:100%;
+	width:100%;
+	left:0;
+	top:0;
+	z-index:1;
+
+}
+.house-markers{
+	position:absolute;
+	color:#fff;
+	height:100%;
+	width:100%;
+	left:0;
+	top:0;
+	z-index:1;
+	#marker-2{
+		top:23%;
+		left:36%;
+	}
+	#marker-3{
+		top:20%;
+		left:55%;
+	}
+	#marker-4{
+		top:9%;
+		left:48%;
+	}
+	#marker-5{
+		top:47%;
+		left:48%;
+	}
+	#marker-6{
+		top:17%;
+		left:66%;
+	}
+	#marker-7{
+		top:41%;
+		left:68%;
+	}
+	#marker-8{
+		top:20%;
+		left:77%;
+	}
+	.house-1{
+		position:absolute;
+		top:16%;
+		left:30%;
+	}
+	.street{
+		padding:7px 8px;
+		background:#6d1238;
+		font-size:12px;
+	}
+	.house-number{
+		text-align:center;
+		background:#ff7900;
+		font-size:41px;
+		font-weight:bold;
+		width:49px;
+		position:relative;
+
+		&:after{
+			content:"";
+			display:block;
+			width:0px;
+			height:0;
+			border-top:16px solid #ff7900;
+			border-bottom:16px solid transparent;
+			border-left:25px solid #ff7900;
+			border-right:24px solid transparent;
+			position:absolute;
+		}
+	}
+}
+.links-container{
+	position:fixed;
+	left:0;
+	top:27%;
+	a.forum, a.facebook{
+		background:url("../img/forum.png") no-repeat 0 0;
+		display:block;
+		height:55px;
+		width:57px;
+		&:hover{
+			background-position:0 -55px;
+		}
+	}
+	a.facebook{
+		background:url("../img/facebook.png") no-repeat 0 0;
+	}
+}
+footer{
+	height:36px;
+	background:rgba(0, 0, 0, 0.71);
+	width:100%;
+	z-index:2;
+	position:absolute;
+	bottom:0;
+	color:#fff;
+	span{
+		line-height:36px;
+		font-size:12px;
+		font-family:"MyriadPro-Regular", Tahoma, Arial, sans-serif;
+	}
+}
+

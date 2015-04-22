@@ -1,0 +1,31 @@
+body, html{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	min-height:600px;
+	min-width:1100px;
+	position:relative;
+	font-family:Tahoma, Arial, sans-serif;
+	font-size:14px;
+}
+img{
+	border:none;
+}
+.wrapper{
+	width:1100px;
+	margin:0 auto;
+	position:relative;
+}
+
+ul, p, h1{
+	margin: 0;
+	padding: 0;
+}
+
+
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}

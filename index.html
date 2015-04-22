@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<title>Квартири
+		</title>
+ 		<link rel="stylesheet" href="css/style.css" type="text/css">
+ 		<script  type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+ 		<script  type="text/javascript" src="js/script.js"></script>
+ 		<script  type="text/javascript" src="js/raphael.min.js"></script>
+ 		<script  type="text/javascript" src="js/draw-svg-for-houses.js"></script>
+ 		<script  type="text/javascript" src="js/svg-path.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="wrapper">
+				<a href="http://yaskraviy.com/" title="home" id="logo"><img src="img/logo-ua.png" alt="logo"></a>
+				<div class="main-menu">
+					<ul>
+						<li><a href="http://yaskraviy.com/ua/2/" title="Комплекс">Комплекс</a>
+							<ul class="sub-menu">
+								<li><a href="http://yaskraviy.com/ua/2/32/" title="Про Яскравий">Про Яскравий</a></li>
+								<li><a href="http://yaskraviy.com/ua/2/2334/" title="Про Забудовника">Про Забудовника</a></li>
+								<li><a href="http://yaskraviy.com/ua/2/2114/" title="Місцерозташування">Місцерозташування</a></li>
+								<li><a href="http://yaskraviy.com/ua/2/2121/" title="Cхема забудови">Cхема забудови</a></li>
+								<li><a href="http://yaskraviy.com/ua/2/2319/" title="Технічні характеристики">Технічні характеристики</a></li>
+								<li><a href="http://yaskraviy.com/ua/2/38/" title="Інфраструктура">Інфраструктура</a></li>
+								<li><a href="http://yaskraviy.com/ua/2/39/" title="Документи">Документи</a></li>
+							</ul>
+						</li>
+						<li><a href="http://yaskraviy.com/ua/2/" title="Квартири">квартири</a>
+							<ul class="sub-menu">
+								<li><a href="http://yaskraviy.com/ua/29/" title="Обрати квартиру">Обрати квартиру</a></li>
+								<li><a href="http://yaskraviy.com/ua/29/932/?rooms=1" title="1-кімнатні">1-кімнатні</a></li>
+								<li><a href="http://yaskraviy.com/ua/29/932/?rooms=2" title="2-кімнатні">2-кімнатні</a></li>
+								<li><a href="http://yaskraviy.com/ua/29/932/?rooms=3" title="3-кімнатні">3-кімнатні</a></li>
+								<li><a href="http://yaskraviy.com/ua/29/932/?rooms=4" title="Дворівневі квартири">Дворівневі квартири</a></li>
+								<li><a href="http://yaskraviy.com/ua/2/37/" title="Оздоблення квартир">Оздоблення квартир</a></li>
+		                	</ul>
+						</li>
+						<li><a href="http://yaskraviy.com/ua/2/" title="Умови">Умови</a>
+							<ul class="sub-menu">
+								<li><a href="http://yaskraviy.com/ua/20/24/" title="Умови продажу">Умови продажу</a></li>
+								<li><a href="http://yaskraviy.com/ua/20/23/" title="Розстрочка">Розстрочка</a></li>
+								<li><a href="http://yaskraviy.com/ua/20/22/" title="Кредитування">Кредитування</a></li>
+								<li><a href="http://yaskraviy.com/ua/20/21/" title="Акції">Акції</a></li>
+							</ul>
+						</li>
+						<li><a href="http://yaskraviy.com/ua/2/" title="Комерційні">Комерційні</a></li>
+						<li><a href="http://yaskraviy.com/ua/2/" title="Галерея">Галерея</a>
+							<ul class="sub-menu">
+								<li><a href="http://yaskraviy.com/ua/28/41/" title="Вид з віко">Вид з вікон</a></li>
+								<li><a href="http://yaskraviy.com/ua/28/1980/" title="Відео">Відео</a></li>
+								<li><a href="http://yaskraviy.com/ua/28/1547/" title="Хід будівництва буд №1">Хід будівництва буд №1</a></li>
+								<li><a href="http://yaskraviy.com/ua/28/1548/" title="Хід будівництва буд №2">Хід будівництва буд №2</a></li>
+								<li><a href="http://yaskraviy.com/ua/28/1549/" title="Хід будівництва буд №3">Хід будівництва буд №3</a></li>
+								<li><a href="http://yaskraviy.com/ua/28/2800/" title="Візуалізації">Візуалізації</a></li>
+							</ul>
+						</li>
+						<li><a href="http://yaskraviy.com/ua/2/" title="Новини">Новини</a></li>
+						<li><a href="http://yaskraviy.com/ua/2/" title="Контакти">Контакти</a></li>
+					</ul>
+				</div>
+				<a href="http://intergal-bud.com.ua/" title="logo-integral" class="intergal-bud"><img src="img/logo-integral.png" alt="logo-integral"></a>
+			</div>
+		</header>		
+		<div class="overflow">
+			<div class="background">
+				<img src="img/kvartiry_2.jpg" alt="fon" class="fon">
+			</div>
+			<div class="kvartiry">
+				<div class="house-markers">
+					<div id="marker-1" class="house-1">
+						<div class="street">Вул. Майорова</div>
+						<div class="house-number">1</div>
+					</div>
+					<div id="marker-2" class="house-1">
+						<div class="street">Вул. Дехтяренка</div>
+						<div class="house-number">1</div>
+					</div>
+					<div id="marker-3" class="house-1">
+						<div class="street">Вул. Дехтяренка</div>
+						<div class="house-number">2</div>
+					</div>
+					<div id="marker-4" class="house-1">
+						<div class="street">Вул. Майорова</div>
+						<div class="house-number">2</div>
+					</div>
+					<div id="marker-5" class="house-1">
+						<div class="street">Вул. Дехтяренка</div>
+						<div class="house-number">3</div>
+					</div>
+					<div id="marker-6" class="house-1">
+						<div class="street">Вул. Майорова</div>
+						<div class="house-number">3</div>
+					</div>
+					<div id="marker-7" class="house-1">
+						<div class="street">Вул. Дехтяренка</div>
+						<div class="house-number">4</div>
+					</div>
+					<div id="marker-8" class="house-1">
+						<div class="street">Вул. Дехтяренка</div>
+						<div class="house-number">5</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="links-container">
+			<a class="forum" title="Форум" target="_blank" href="http://forum.yaskraviy.com/"></a>
+			<a class="facebook" title="facebook" target="_blank" href="https://www.facebook.com/IntergalBud?fref=ts"></a>
+		</div>
+		<footer>
+			<div class="wrapper">
+				<span>© 2014  ЖК Яскравий - Всі права захищено</span>
+			</div>
+		</footer>
+	</body>
+</html>
