@@ -177,6 +177,7 @@ header{
 	position:fixed;
 	left:0;
 	top:27%;
+	z-index:1;
 	a.forum, a.facebook{
 		background:url("../img/forum.png") no-repeat 0 0;
 		display:block;
